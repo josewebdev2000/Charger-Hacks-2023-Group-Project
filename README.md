@@ -1,4 +1,4 @@
-![Project Image](https://ibb.co/Jz44nhZ)
+![TranquilAI](https://github.com/josewebdev2000/Charger-Hacks-2023-Group-Project/assets/94510566/acefd665-880c-4de8-aec8-a7dc879e942f)
 ## **TranquilAI** 🤖🧠
 **TranquilAI** is a chatbot-based project that provides emotional support to school and college students. It is a website where students can chat with the chatbot to distract from their stress and feel better.
 **TranquilAI** is designed to be a safe and supportive space for students to talk about their problems and concerns. The chatbot is trained to listen and respond in a way that is empathetic and understanding. It can also provide students with resources and information on how to cope with stress and other mental health challenges.
