@@ -58,6 +58,8 @@ def chat():
         
         # If request type is not json, return custom error response
         if not request.is_json:
+            print(request)
+            print("Error Here Not JSON")
             return custom_response(custom_error_data(False), 400)
         
         # Grab JSON request from the user

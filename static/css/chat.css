@@ -14,7 +14,7 @@ div#chat3
     border-radius: 15px;
 }
 
-div#bot-list, div#chat-container
+div#bot-list, div#chat-real-container
 {
     position: relative; 
     height: 400px;
