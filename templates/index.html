@@ -3,13 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This tells the browser how should it render this HTML document. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- This meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Tranquil AI</title>
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!--Favicon-->
+    <link rel="icon" href="/static/img/favicon.ico">
+
+    <!-- Google Fonts Roboto -->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="/static/css/mdb.min.css" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!--jQUery-->
+    <src src="/static/js/jquery.js"></src>
+
+    <!--Custom JS-->
+    <src src="/static/js/index.js"></src>
+
 </head>
 <body>
-    <h1>Hello There</h1>
-    <h2>Overview</h2>
-    <p>I am the main page</p>
+    <header class="mb-5 mb-lg-7">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-before-scroll shadow-0 navbar-after-scroll navbar-dark bg-dark">
+            <div class="container">
+                <!--Toggle Btn-->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
 
-    <img src="static/img/mdb-favicon.ico" alt="Cool Pic">
+                <!--Collapsible Wrapper-->
+                <div id="navContent" class="collapse navbar-collapse">
+                    <!--Navbar brand-->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                        <img src="/static/img/chatbot-32px.png" alt="Chatbox Logo" loading="lazy">
+                    </a>
+
+                    <!--Left Links-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary fw-bold" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary fw-bold" href="#creators">Creators</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary fw-bold" href="/chat">Chat</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Right Elements-->
+                <div class="d-flex align-items-center">
+                    <a class="text-secondary" href="https://github.com/josewebdev2000/Charger-Hacks-2023-Group-Project" rel="nofollow" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-image vh-100">
+            <div class="mask">
+                <div class="container d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white text-center">
+                        <h1 class="mb-3">Tranquil AI</h1>
+                        <h5 class="mb-4">Calm down with your favourite chatbots</h5>
+                        <a class="btn btn-primary" href="/chat" role="button">Chat Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="about" class="mb-10 text-center">
+                <h2 class="fw-bold mb-7 text-center">About</h2>
+
+                <!--Brief Grid of 3 columns-->
+                <div class="row gx-lg-5">
+                    <div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
+                        <div class="card animation fade-in rounded-6" 
+                        data-mdb-toggle="animation" data-mdb-animation-start="onHover"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="true"
+                        data-mdb-animation-delay="200">
+
+                            <div class="bg-image hover-overlay ripple shadow-4-strong rounded-6 ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                                <img class="w-100" src="/static/img/happy-chatbot-512px.png" alt="AI Chatbot 1">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">AI Companion</h5>
+                                <p class="card-text">
+                                    Tranquil AI is your AI companion, designed to provide soothing advice and a friendly presence. It's always by your side, ready to lend a supportive and understanding ear.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-6 mb-lg-0">
+                        <div class="card animation fade-in rounded-6" 
+                        data-mdb-toggle="animation" data-mdb-animation-start="onHover"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="true"
+                        data-mdb-animation-delay="200">
+
+                            <div class="bg-image hover-overlay ripple shadow-4-strong rounded-6 ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                                <img class="w-100" src="/static/img/happier-chatbot-512px.png" alt="AI Chatbot 1">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Peaceful Ally</h5>
+                                <p class="card-text">
+                                    Tranquil AI, your Peaceful Ally, is a chatbot created to offer solace and understanding. It's inspired by personal experiences of navigating mental health challenges, providing a serene space to confide and find support in a digital friend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-6 mb-lg-0">
+                        <div class="card animation fade-in rounded-6" 
+                        data-mdb-toggle="animation" data-mdb-animation-start="onHover"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="true"
+                        data-mdb-animation-delay="200">
+
+                            <div class="bg-image hover-overlay ripple shadow-4-strong rounded-6 ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                                <img class="w-100" src="/static/img/chatbot-pc-512px.png" alt="AI Chatbot 1">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Comforting AI</h5>
+                                <p class="card-text">
+                                    Tranquil AI, your Comforting AI, is a dedicated companion for your emotional well-being. It offers a secure space to express your thoughts and feelings, providing understanding and support in times of need.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <section id="creators" class="mb-10 text-center">
+                <h2 class="fw-bold mb-7 text-center">Creators</h2>
+
+                <!--Brief Grid of 4 columns-->
+                <div class="row gx-lg-5">
+                    <!--First Creator-->
+                    <div class="col-lg-3 mb-5 mb-lg-0">
+                        <div class="custom-card animation fade-in" data-mdb-toggle="animation" data-mdb-animation-start="onHover"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="true" data-mdb-animation-delay="200"
+                        >
+                            <div class="rounded-7 p-4 shadow-3">
+                                <hr class="hr hr-blurry">
+                                <p class="text-muted mt-4 mb-2">Team Coordinator</p>
+                                <p class="h5 mb-4 text-primary">Anub Khismatrao</p>
+                                <p class="pb-4 mb-4">
+                                    Anub Khismatrao initiated the group and oversaw collaborative efforts, facilitating effective communication and ensuring a unified vision for the project.
+                                </p>
+                            </div>
+                            <img class="creator-profile-pic w-100 rounded-7 mt-n5 shadow-5-strong" src="/static/img/anub-profile-pic.jpeg" alt="Anub Profile Pic">
+                        </div>
+                    </div>
+                    <!--Second Creator-->
+                    <div class="col-lg-3 mb-5 mb-lg-0">
+                        <div class="custom-card animation fade-in" data-mdb-toggle="animation" data-mdb-animation-start="onHover"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="true" data-mdb-animation-delay="200"
+                        >
+                            <div class="rounded-7 p-4 shadow-3">
+                                <hr class="hr hr-blurry">
+                                <p class="text-muted mt-4 mb-2">UI/UX Designer</p>
+                                <p class="h5 mb-4 text-primary">Hala</p>
+                                <p class="pb-4 mb-4">
+                                    Hala shaped the visual identity of our web app, creating an engaging and intuitive interface for a captivating user experience.
+                                </p>
+                            </div>
+                            <img class="creator-profile-pic w-100 rounded-7 mt-n5 shadow-5-strong" src="/static/img/female-profile-pic.png" alt="Anub Profile Pic">
+                        </div>
+                    </div>
+                    <!--Third Creator-->
+                    <div class="col-lg-3 mb-5 mb-lg-0">
+                        <div class="custom-card animation fade-in" data-mdb-toggle="animation" data-mdb-animation-start="onHover"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="true" data-mdb-animation-delay="200"
+                        >
+                            <div class="rounded-7 p-4 shadow-3">
+                                <hr class="hr hr-blurry">
+                                <p class="text-muted mt-4 mb-2">Full-Stack Web Developer</p>
+                                <p class="h5 mb-4 text-primary">Jose Brache Garcia</p>
+                                <p class="pb-4 mb-4">
+                                    Jose Brache Garcia crafted the technical backbone of our application, ensuring seamless functionality and a user-friendly experience.
+                                </p>
+                            </div>
+                            <img class="creator-profile-pic w-100 rounded-7 mt-n5 shadow-5-strong" src="/static/img/jose-profile-pic.jpg" alt="Anub Profile Pic">
+                        </div>
+                    </div>
+                    <!--Fourth Creator-->
+                    <div class="col-lg-3 mb-5 mb-lg-0">
+                        <div class="custom-card animation fade-in" data-mdb-toggle="animation" data-mdb-animation-start="onHover"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="true" data-mdb-animation-delay="200"
+                        >
+                            <div class="rounded-7 p-4 shadow-3">
+                                <hr class="hr hr-blurry">
+                                <p class="text-muted mt-4 mb-2">Research Manager</p>
+                                <p class="h5 mb-4 text-primary">Nahima</p>
+                                <p class="pb-4 mb-4">
+                                    Nahima initiated the group and oversees collaborative efforts, facilitating effective communication and ensuring a unified vision for the project.
+                                </p>
+                            </div>
+                            <img class="creator-profile-pic w-100 rounded-7 mt-n5 shadow-5-strong" src="/static/img/female-profile-pic.png" alt="Anub Profile Pic">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!--Body Scripts-->
+    <script src="/static/js/mdb.min.js"></script>
 </body>
 </html>

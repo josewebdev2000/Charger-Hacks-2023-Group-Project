@@ -3,11 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
+    <!-- This tells the browser how should it render this HTML document. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- This meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Tranquil AI</title>
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!--Favicon-->
+    <link rel="icon" href="/static/img/favicon.ico">
+
+    <!-- Google Fonts Roboto -->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="/static/css/mdb.min.css" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+
+    <!--jQUery-->
+    <src src="/static/js/jquery.js"></src>
+
+    <!--Custom JS-->
+    <src src="/static/js/chat.js"></src>
+
 </head>
 <body>
-    <h1>Hello There</h1>
-    <h2>Overivew</h2>
-    <p>In this page will be saved the AI Chat</p>
+    <header class="mb-5 mb-lg-7">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-before-scroll shadow-0 navbar-after-scroll navbar-dark bg-dark">
+            <div class="container">
+                <!--Toggle Btn-->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!--Collapsible Wrapper-->
+                <div id="navContent" class="collapse navbar-collapse">
+                    <!--Navbar brand-->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                        <img src="/static/img/chatbot-32px.png" alt="Chatbox Logo" loading="lazy">
+                    </a>
+
+                    <!--Left Links-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary fw-bold" href="/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Right Elements-->
+                <div class="d-flex align-items-center">
+                    <a class="text-secondary" href="https://github.com/josewebdev2000/Charger-Hacks-2023-Group-Project" rel="nofollow" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       
+    </main>
+    
+    <!--Body Scripts-->
+    <script src="/static/js/mdb.min.js"></script>
 </body>
 </html>

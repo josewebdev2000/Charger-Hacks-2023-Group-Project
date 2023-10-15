@@ -2,7 +2,7 @@
 
 # Import the Main Server
 import os
-from flask import Flask, render_template
+from flask import Flask, request, render_template, json, jsonify
 from dotenv import load_dotenv
 
 # Load env vars from .env file
@@ -18,6 +18,15 @@ salina_id = os.getenv("SALINA_ID")
 dogbot_id = os.getenv("DOGBOT_ID")
 
 # Define routes of the app
-@app.route("/")
+@app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
+
+@app.route("/chat", methods=["GET", "POST"])
+def chat():
+    
+    if request.method == "GET":
+        return render_template("chat.html")
+    
+    elif request.method == "POST":
+        return jsonify({"message": "Simple response for POST Request"})

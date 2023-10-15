@@ -1,0 +1,18 @@
+/* Header Section */
+header > nav
+{
+    z-index: 1;
+    min-height: 58.59px;
+}
+
+header > div.bg-image
+{
+    margin-top: -58.59px;
+    background-size: 40%;
+    background-image: url("/static/img/happier-chatbot-512px.png");
+}
+
+header > div.bg-image > div.mask
+{
+    background-color: hsla(0, 0%, 0%, 0.3);
+}

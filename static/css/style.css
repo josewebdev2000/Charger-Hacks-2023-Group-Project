@@ -1,0 +1,24 @@
+/* Main Content */
+div.card
+{
+    visibility: visible;
+    animation-delay: 200ms;
+    animation-duration: 500ms;
+}
+
+div.custom-card
+{
+    animation-delay: 200ms;
+    animation-duration: 500ms;
+    visibility: visible;
+}
+
+div.custom-card > div
+{
+    background-color: hsl(218, 62.2%, 95%);
+}
+
+img.creator-profile-pic
+{
+    max-width: 250px;
+}
