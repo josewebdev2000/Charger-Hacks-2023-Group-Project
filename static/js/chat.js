@@ -97,7 +97,7 @@ function sendUserMsg(e)
     };
 
     // Perform the POST request using the fetch function
-    fetch("http://localhost:5000/chat", requestOptions)
+    fetch("http://localhostt:5000/chat", requestOptions)
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`Request failed with status: ${response.status}`);
