@@ -1,0 +1,38 @@
+/* Main Page */
+.vscroll
+{
+    overflow-y: scroll;
+}
+
+.xscroll
+{
+    overflow-x: scroll;
+}
+
+div#chat3
+{
+    border-radius: 15px;
+}
+
+div#bot-list, div#chat-container
+{
+    position: relative; 
+    height: 400px;
+}
+
+div.user-msg > div p
+{
+    background-color: #f5f6f7;
+}
+
+div.user-msg > img, div.bot-msg > img
+{
+    width: 45px; 
+    height: 100%;
+}
+
+div#user-msg-container > img
+{
+    width: 40px;
+    height: 100%;
+}
